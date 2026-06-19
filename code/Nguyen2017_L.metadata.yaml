@@ -1,0 +1,116 @@
+_dataset:
+  class: Nguyen2017_L
+  code: Nguyen2017-L
+  doi: 10.1088/1741-2552/aa8235
+  interval:
+  - 0
+  - 1.5
+  n_subjects: 6
+  paradigm: imagery
+acquisition:
+  channel_types:
+    eeg: 60
+    eog: 4
+  filters:
+    highpass: 8.0
+    lowpass: 70.0
+    notch_hz: 60.0
+  hardware: BrainProducts ActiCHamp
+  line_freq: 60.0
+  montage: standard_1020
+  n_channels: 64
+  sampling_rate: 256.0
+  sensor_type: EEG
+data_processed: true
+data_structure:
+  n_trials: 3600
+  n_trials_per_class:
+    cooperate: 1800
+    independent: 1800
+  trials_context: 6 subjects x 200 trials, each split into 3 epochs. T=1.4 s.
+documentation:
+  associated_paper_doi: 10.1088/1741-2552/aa8235
+  contact_info:
+  - chuong.h.nguyen@asu.edu
+  - panagiotis.artemiadis@asu.edu
+  country: US
+  data_url: https://zenodo.org/records/19502794
+  description: Imagined speech EEG dataset. Paper reports 66.2+/-4.8% mean accuracy.
+  doi: 10.1088/1741-2552/aa8235
+  institution: Arizona State University
+  institution_address: Tempe, AZ 85287, USA
+  institution_department: School for Engineering of Matter, Transport and Energy
+  investigators:
+  - Chuong H. Nguyen
+  - George K. Karavas
+  - Panagiotis Artemiadis
+  keywords:
+  - imagined speech
+  - EEG
+  - Riemannian manifold
+  - covariance matrix
+  - relevance vector machines
+  - brain-computer interface
+  - long words
+  license: other-open
+  publication_year: 2018
+  repository: Zenodo
+  senior_author: Panagiotis Artemiadis
+experiment:
+  class_labels:
+  - cooperate
+  - independent
+  events:
+    cooperate: 1
+    independent: 2
+  hed_tags:
+    cooperate: (Sensory-event, Experimental-stimulus, Auditory-presentation, Visual-presentation), (Agent-action, (Imagine,
+      Speak, (Word, (Label/cooperate))))
+    independent: (Sensory-event, Experimental-stimulus, Auditory-presentation, Visual-presentation), (Agent-action, (Imagine,
+      Speak, (Word, (Label/independent))))
+  mode: offline
+  n_classes: 2
+  paradigm: imagery
+  primary_modality: auditory
+  stimulus_modalities:
+  - auditory
+  - visual
+  stimulus_type: auditory + visual cue
+  study_design: 'Auditory beep + visual cue. 5 beeps at T=1.4s rhythm. Analyzed: 5s after last beep. Each 5s trial is split
+    into 3 overlapping epochs of 2s.'
+  synchronicity: synchronous
+  trial_duration: 2.0
+file_format: MAT
+paradigm_specific:
+  cue_duration_s: 9.8
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 5.0
+  imagery_tasks:
+  - cooperate
+  - independent
+participants:
+  age_max: 32
+  age_min: 22
+  health_status: healthy
+  n_subjects: 6
+  species: human
+preprocessing:
+  data_state: preprocessed
+  highpass_hz: 8.0
+  lowpass_hz: 70.0
+  notch_hz: 60.0
+  preprocessing_applied: true
+  preprocessing_steps:
+  - Bandpass 8-70 Hz (5th order Butterworth)
+  - 60 Hz notch filter (to remove line noise)
+  - EOG artifact removal (adaptive filtering)
+  - Downsampled from 1000 Hz to 256 Hz
+runs_per_session: 1
+sessions_per_subject: 1
+tags:
+  modality:
+  - Speech
+  pathology:
+  - Healthy
+  type:
+  - Research

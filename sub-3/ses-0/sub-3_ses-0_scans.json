@@ -1,0 +1,9 @@
+{
+	"Description": "Scans file listing data acquisitions.",
+	"filename": {
+		"Description": "Relative path to the data file."
+	},
+	"acq_time": {
+		"Description": "Acquisition date and time."
+	}
+}

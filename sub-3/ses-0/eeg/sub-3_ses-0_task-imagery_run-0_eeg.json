@@ -1,0 +1,46 @@
+{
+	"TaskName": "imagery",
+	"Manufacturer": "Brain Products",
+	"PowerLineFrequency": 60.0,
+	"SamplingFrequency": 256.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "Bandpass 8-70 Hz (5th order Butterworth), 60 Hz notch filter (to remove line noise), EOG artifact removal (adaptive filtering), Downsampled from 1000 Hz to 256 Hz"
+		}
+	},
+	"RecordingDuration": 1433.99609375,
+	"RecordingType": "continuous",
+	"EEGReference": "n/a",
+	"EEGGround": "n/a",
+	"EEGPlacementScheme": "10-20 system",
+	"EEGChannelCount": 60,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "BrainProducts ActiCHamp",
+	"SoftwareVersions": "n/a",
+	"HardwareFilters": {
+		"Bandpass": {
+			"LowCutoffFrequency": 8.0,
+			"HighCutoffFrequency": 70.0
+		},
+		"Notch": {
+			"CutoffFrequency": [
+				60.0
+			]
+		}
+	},
+	"TaskDescription": "Auditory beep + visual cue. 5 beeps at T=1.4s rhythm. Analyzed: 5s after last beep. Each 5s trial is split into 3 overlapping epochs of 2s. Trial duration: 2.0s, cue: 9.8s, imagery: 5.0s.",
+	"Instructions": "n/a",
+	"CogAtlasID": "https://www.cognitiveatlas.org/task/id/trm_4c8a834779883/",
+	"InstitutionName": "Arizona State University",
+	"InstitutionAddress": "Tempe, AZ 85287, USA",
+	"InstitutionalDepartmentName": "School for Engineering of Matter, Transport and Energy",
+	"CapManufacturer": "n/a",
+	"CapManufacturersModelName": "n/a",
+	"SubjectArtefactDescription": "n/a",
+	"DeviceSerialNumber": "n/a",
+	"Description": "Imagined speech EEG dataset. Paper reports 66.2+/-4.8% mean accuracy.",
+	"MISCChannelCount": 0
+}
