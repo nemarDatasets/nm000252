@@ -22,7 +22,7 @@
     "brain-computer interface",
     "long words"
   ],
-  "DatasetDOI": "doi:10.1088/1741-2552/aa8235",
+  "DatasetDOI": "10.82901/nemar.nm000252",
   "GeneratedBy": [
     {
       "CodeURL": "https://github.com/NeuroTechX/moabb",
@@ -35,6 +35,9 @@
     {
       "DOI": "10.1088/1741-2552/aa8235",
       "URL": "https://zenodo.org/records/19502794"
+    },
+    {
+      "DOI": "doi:10.1088/1741-2552/aa8235"
     }
   ],
   "PublicationYear": 2018,
