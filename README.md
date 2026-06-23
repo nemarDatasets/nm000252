@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000252-blue)](https://doi.org/10.82901/nemar.nm000252)
+
 # Imagined speech EEG dataset — long words condition (Nguyen et al. 2017)
 
 ## Overview
