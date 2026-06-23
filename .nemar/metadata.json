@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Imagined speech EEG dataset — long words condition (Nguyen et al. 2017)",
-  "description": "This dataset comprises preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks involving two word categories (cooperate and independent). The study employed a motor imagery paradigm with auditory and visual cues, yielding 3,600 trials (1,800 per class) recorded at 256 Hz from 64 EEG channels. Data were preprocessed with bandpass filtering (8-70 Hz), notch filtering at 60 Hz, and EOG artifact removal, achieving mean classification accuracy of 66.2±4.8% using Riemannian manifold and relevance vector machine approaches.",
-  "methods_description": "EEG data were acquired using a BrainProducts ActiCHamp system at 256 Hz sampling rate from 64 channels (60 EEG, 4 EOG) in a standard 10-20 montage. The experimental protocol involved auditory beeps at 1.4 s intervals followed by visual cues prompting imagined speech of either 'cooperate' or 'independent' words. Each 5-second trial was divided into 3 overlapping 2-second epochs. Preprocessing included 5th-order Butterworth bandpass filtering (8-70 Hz), 60 Hz notch filtering, and adaptive EOG artifact removal.",
+  "description": "This dataset comprises EEG recordings from 6 healthy participants performing imagined speech tasks with two conditions (cooperate and independent word imagery). The study employed a motor imagery paradigm with auditory and visual cues, yielding 1,200 trials that were preprocessed into 3,600 overlapping epochs (1,800 per class) recorded at 256 Hz from 64 channels. Data were analyzed using Riemannian manifold methods and relevance vector machines for brain-computer interface applications, achieving mean classification accuracy of 66.2±4.8%.",
+  "methods_description": "EEG data were acquired using a BrainProducts ActiCHamp system at 256 Hz sampling rate from 64 channels (60 EEG, 4 EOG) using standard 10-20 montage. Participants performed imagined speech tasks cued by auditory beeps (5 beeps at 1.4s rhythm) and visual cues. Preprocessing included bandpass filtering (8-70 Hz, 5th order Butterworth), 60 Hz notch filtering, and adaptive EOG artifact removal. Each 5-second trial was split into 3 overlapping 2-second epochs, yielding 3,600 preprocessed epochs derived from 1,200 base trials.",
   "license": "other-open",
   "dataset_type": "derivative",
   "authors": {
@@ -31,10 +31,10 @@
       "term": "covariance matrix"
     },
     {
-      "term": "relevance vector machines"
+      "term": "long words"
     },
     {
-      "term": "long words"
+      "term": "relevance vector machines"
     }
   ],
   "related_identifiers": [
@@ -80,5 +80,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "251ff21e48e317ca5b3111db0d5ca7d7fd07ca601544818f9c511ee4017cadd6"
+  "source_hash": "10b632bbe41ac02dec4bce8fbc5efaba21f1f2bf0c807d5c2e1a6a9f38d751c8"
 }
