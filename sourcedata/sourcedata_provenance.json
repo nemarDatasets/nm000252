@@ -1,0 +1,45 @@
+{
+ "dataset": "nm000252",
+ "moabb_class": "Nguyen2017_L",
+ "moabb_version_used": "1.5.0dev0",
+ "retrieved": "2026-08-13",
+ "retrieved_by": "moabb.datasets.Nguyen2017_L.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-nguyen2017l-data/Long_words",
+ "license": "other-open",
+ "doi": "10.1088/1741-2552/aa8235",
+ "naming": "upstream_filenames_restored",
+ "n_files": 6,
+ "total_bytes": 1097188401,
+ "files": [
+  {
+   "file": "sub-01.mat",
+   "bytes": 175319732,
+   "sha256": "f05badab811b6a9951359a8d0cd2fe01ad4d4db78ca1ede2d11f7ecd53b07b28"
+  },
+  {
+   "file": "sub-02.mat",
+   "bytes": 219810358,
+   "sha256": "b75b79bab9136cba67b7a82c15e912dc9897ab6d132e09a2ffae4de50522f602"
+  },
+  {
+   "file": "sub-03.mat",
+   "bytes": 175627683,
+   "sha256": "d996ed541629559ab46f81549df0569dfe5846d4bd0545a23d1fdef2b3b7c397"
+  },
+  {
+   "file": "sub-04.mat",
+   "bytes": 175489766,
+   "sha256": "3105d68b21be4dca2d4f4a5eb1f745276f36399a95db418f5d4988ed8de9fd33"
+  },
+  {
+   "file": "sub-05.mat",
+   "bytes": 175601031,
+   "sha256": "8566cb2bb9de0829ddacc93f6a0cd20b265981c5d47417f7269f09fce8589223"
+  },
+  {
+   "file": "sub-06.mat",
+   "bytes": 175339831,
+   "sha256": "6ed3272d84df24231c7097fffb158302b7378d7663d22fab3290c93a01d40ba5"
+  }
+ ]
+}
