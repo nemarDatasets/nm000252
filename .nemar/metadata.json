@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Imagined speech EEG dataset — long words condition (Nguyen et al. 2017)",
-  "description": "This dataset comprises EEG recordings from 6 healthy participants performing imagined speech tasks with two conditions (cooperate and independent word imagery). The study employed a motor imagery paradigm with auditory and visual cues, yielding 1,200 original trials (600 per class) recorded at 256 Hz from 64 channels. Each 5-second trial was split into 3 overlapping 2-second epochs during preprocessing, resulting in 3,600 preprocessed epochs. Data were analyzed using Riemannian manifold methods and relevance vector machines for brain-computer interface applications, achieving mean classification accuracy of 66.2±4.8%.",
-  "methods_description": "EEG data were acquired using a BrainProducts ActiCHamp system at 256 Hz sampling rate from 64 channels (60 EEG, 4 EOG) using standard 10-20 montage. Participants performed imagined speech tasks cued by auditory beeps (5 beeps at 1.4s rhythm) and visual cues. Preprocessing included bandpass filtering (8-70 Hz, 5th order Butterworth), 60 Hz notch filtering, and adaptive EOG artifact removal. Each 5-second trial was split into 3 overlapping 2-second epochs, yielding 3,600 preprocessed epochs from 1,200 original trials (600 per class).",
+  "description": "EEG recordings from six healthy participants performing imagined speech of long words, comprising two word classes (cooperate and independent), with 64 channels recorded at 256 Hz. Trials were cued by auditory beeps and visual cues, and the data were analyzed with Riemannian manifold covariance features and relevance vector machines for brain-computer interface classification. The dataset is re-hosted in BIDS format from the MOABB benchmark collection.",
+  "methods_description": "EEG was acquired with a BrainProducts ActiCHamp system at 256 Hz from 64 channels (60 EEG, 4 EOG) in a 10-20 montage. Participants performed imagined speech cued by five auditory beeps at a 1.4 s rhythm plus visual cues. Preprocessing included 8-70 Hz 5th-order Butterworth bandpass filtering, a 60 Hz notch filter, and adaptive EOG artifact removal. Each 5-second trial was split into three overlapping 2-second epochs.",
   "license": "other-open",
   "dataset_type": "derivative",
   "authors": {
@@ -13,16 +13,13 @@
   },
   "keywords": [
     {
-      "term": "imagined speech"
-    },
-    {
       "term": "EEG"
     },
     {
-      "term": "brain-computer interface"
+      "term": "imagined speech"
     },
     {
-      "term": "motor imagery"
+      "term": "brain-computer interface"
     },
     {
       "term": "Riemannian manifold"
@@ -31,10 +28,7 @@
       "term": "covariance matrix"
     },
     {
-      "term": "relevance vector machines"
-    },
-    {
-      "term": "long words"
+      "term": "relevance vector machine"
     }
   ],
   "related_identifiers": [
@@ -49,16 +43,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.21105/joss.01896",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
-      "identifier": "10.1038/s41597-019-0104-8",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
       "identifier": "https://nemar.org/dataset/nm000252",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
@@ -70,7 +54,7 @@
     "eeg"
   ],
   "sizes": [
-    "1.4 GB (13 files)"
+    "1.27 GB (13 files)"
   ],
   "formats": [
     ".edf",
